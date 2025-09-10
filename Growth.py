@@ -1,3 +1,8 @@
+import os
+os.system('pip install joblib')  # force-install joblib if missing
+
+import joblib
+
 import streamlit as st
 import numpy as np
 import joblib
@@ -37,3 +42,4 @@ if st.button("Predict All"):
            [plant_length_pred, no_of_leaves_pred, stem_girth_pred])
     ax.set_ylabel("Predicted Value")
     st.pyplot(fig)
+
