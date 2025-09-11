@@ -157,20 +157,6 @@ if st.button("Predict"):
         st.error(f"Error making prediction: {e}")
 
 # ----------------------------
-# Optional Chart
-# ----------------------------
-if st.button("Show Prediction Chart"):
-    if variable == "Cucumber Growth" and predictions:
-        fig, ax = plt.subplots()
-        ax.bar(predictions.keys(),
-               [round(predictions[sub], rounding[sub]) for sub in predictions],
-               color=['lightblue', 'lightgreen', 'salmon'])
-        ax.set_ylabel("Values")
-        st.pyplot(fig)
-    elif variable in predictions:
-        fig, ax = plt.subplots()
-        ax.bar([variable], [round(predictions[variable], rounding[variable])], color='lightgreen')
-        ax.set_ylabel(f"{variable} ({units.get(variable, '')})")
-        st.pyplot(fig)
+
 
 
