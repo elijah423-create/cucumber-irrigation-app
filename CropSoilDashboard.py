@@ -1,3 +1,4 @@
+MODEL_PATH = "models"
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -172,3 +173,4 @@ if st.button("Show Prediction Chart"):
         ax.bar([variable], [round(predictions[variable], rounding[variable])], color='lightgreen')
         ax.set_ylabel(f"{variable} ({units.get(variable, '')})")
         st.pyplot(fig)
+
