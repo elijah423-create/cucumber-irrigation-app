@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 # ----------------------------
 # Set path for models
 # ----------------------------
-MODEL_PATH = r"C:\Users\Owner\Field work2\Field work\Data 2\CropSoilDashboard"
 
 # ----------------------------
 # Load Models
@@ -173,4 +172,5 @@ if st.button("Show Prediction Chart"):
         ax.bar([variable], [round(predictions[variable], rounding[variable])], color='lightgreen')
         ax.set_ylabel(f"{variable} ({units.get(variable, '')})")
         st.pyplot(fig)
+
 
