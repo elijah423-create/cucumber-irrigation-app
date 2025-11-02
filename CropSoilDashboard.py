@@ -63,7 +63,7 @@ rounding = {
 # ----------------------------
 # App Title
 # ----------------------------
-st.title("Cucumber Growth & Soil Property Dashboard – Ogbomoso")
+st.title("Cucumber Growth & Soil Physical Property Dashboard – Ogbomoso")
 st.write("Select a variable to predict and enter the required parameters.")
 
 # ----------------------------
@@ -157,6 +157,7 @@ if st.button("Predict"):
         st.error(f"Error making prediction: {e}")
 
 # ----------------------------
+
 
 
 
